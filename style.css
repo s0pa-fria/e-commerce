@@ -96,3 +96,15 @@ header{
 .btn:hover{
     background: #563434;
 }
+
+/* ___________________________________________________________________ */
+/* Header Responsividade (Mobile) */
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* ___________________________________________________________________ */
+/* Categorias */

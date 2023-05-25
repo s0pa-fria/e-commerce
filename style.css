@@ -51,7 +51,7 @@ a{
 p{
     color: #555;
 }
-header{
+.header{
     background: radial-gradient(#fff, #ffd6d6);
 }
 

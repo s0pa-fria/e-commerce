@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento - RedStore</title>
+</head>
+<body>
+    <div class="header" style="background: #fff;">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="e-commerce_(Index_Fase_1)/images/logo.png" alt="logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+                <a href="pagamentos.html"><img src="e-commerce_(Index_Fase_1)/images/cart.png" alt="" width="30px" height="30px"></a>
+                <img src="e-commerce_(Index_Fase_1)/images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+
+<!-- ________________________________________________________________ -->
+<!-- Pagamento do Produto detalhado--> 
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Quantidade</th>
+                    <th>Subtotal</th>
+                </tr>
+
+                <!-- 1º Produto -->
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="e-commerce_(Index_Fase_1)/images/buy-1.jpg">
+                            <div>
+                                <p>Camiseta Red Printed</p>
+                                <small>Preço: R$200,00</small>
+                                <br>
+                                <a href="">Remover</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>R$200,00</td>
+                </tr>
+
+                <!-- 2º Produto -->
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="e-commerce_(Index_Fase_1)/images/buy-2.jpg">
+                            <div>
+                                <p>Camiseta Red Printed</p>
+                                <small>Preço: R$200,00</small>
+                                <br>
+                                <a href="">Remover</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>R$500,00</td>
+                </tr>
+
+                <!-- 2º Produto -->
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="e-commerce_(Index_Fase_1)/images/buy-3.jpg">
+                            <div>
+                                <p>Camiseta Red Printed</p>
+                                <small>Preço: R$200,00</small>
+                                <br>
+                                <a href="">Remover</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>R$280,00</td>
+                </tr>
+
+            </table>
+<!-- ________________________________________________________________ -->
+<!-- Métodos de pagament e Subtotais--> 
+            <div class="total-price">
+
+                <!-- Métodos de pagamento -->
+                <div class="container-pag">
+                    <h4>Formas de Pagamento</h4>
+                    <div class="parte">
+                        <input type="radio" name="metodo" value="pix">
+                        <span class="iconify" data-icon="simples-icon:pix" style="color: #00b7a9;" data-widt="36" data-height="36"></span>
+                        <label for="pix">Pix</label>
+                    </div>
+                    <div class="parte">
+                        <input type="radio" name="metodo" value="cartao">
+                        <span class="iconify" data-icon="ph:credit-car-fill" style="color: #d4af37;" data-widt="36" data-height="36"></span>
+                        <label for="cartao">Cartão</label>
+                    </div>
+                    <div class="parte">
+                        <input type="radio" name="metodo" value="boleto">
+                        <span class="iconify" data-icon="icon-park-solid:id-card" style="color: #333;" data-widt="36" data-height="36"></span>
+                        <label for="boleto">Boleto</label>
+                    </div>
+                </div>
+               <!-- Subtotais -->
+               <table>
+                    <tr>
+                        <td>Subtotal</td>    
+                        <td>R$980,00</td>    
+                    </tr>
+
+                    <tr>
+                        <td>Impostos</td>    
+                        <td>R$220,00</td>    
+                    </tr>
+
+                    <tr>
+                        <td>Total</td>    
+                        <td>R$1.200,00</td>    
+                    </tr>
+               </table>
+            </div>
+            
+        </div>
+<!-- ________________________________________________________________ -->
+<!-- Footer--> 
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Use o nosso App</h3>
+                <p>Baixe o aplicativo para celular Android e ios</p>
+                <div class="app-logo">
+                    <img src="e-commerce_(Index_Fase_1)/images/play-store.png" alt="">
+                    <img src="e-commerce_(Index_Fase_1)/images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="e-commerce_(Index_Fase_1)/images/logo-white.png" alt="">
+                <p>Nosso propósito é tornar o prazer e os benefícios do esporte acessíveis a todos</p>
+            </div>
+            <div class="footer-col-4">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023- RedStore</p>
+    </div>
+</div>
+<!-- ________________________________________________________________ -->
+<!-- JS para toggle menu-->
+
+<script src="menu.js"></script>
+</body>
+</html>

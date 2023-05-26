@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - RedStore</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Inserindo favicon -->
+    <link rel="shortcut icon" href="e-commerce_(Index_Fase_1)/images/logo-favicon.png" type="image/x-icon">
+
+    <!-- Link para fontawesome -->
+    <script src="https://kit.fontawesome.com/23655c98f8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="e-commerce_(Index_Fase_1)/images/logo.png" alt="logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+                <a href="pagamentos.html"><img src="e-commerce_(Index_Fase_1)/images/cart.png" alt="" width="30px" height="30px"></a>
+                <img src="e-commerce_(Index_Fase_1)/images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+<!-- ________________________________________________________________ -->
+<!-- Página de login-->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="e-commerce_(Index_Fase_1)/images/image1.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Registrar</span>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Nome do usuário">
+                        <input type="password" placeholder="Senha">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Esqueci a senha</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Nome do usuário">
+                        <input type="email" placeholder="E-mail">
+                        <input type="password" placeholder="Senha">
+                        <button type="submit" class="btn">Resgistrar</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ________________________________________________________________ -->
+<!-- Footer--> 
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Use o nosso App</h3>
+                <p>Baixe o aplicativo para celular Android e ios</p>
+                <div class="app-logo">
+                    <img src="e-commerce_(Index_Fase_1)/images/play-store.png" alt="">
+                    <img src="e-commerce_(Index_Fase_1)/images/app-store.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="e-commerce_(Index_Fase_1)/images/logo-white.png" alt="">
+                <p>Nosso propósito é tornar o prazer e os benefícios do esporte acessíveis a todos</p>
+            </div>
+            <div class="footer-col-4">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023- RedStore</p>
+    </div>
+</div>
+<!-- ________________________________________________________________ -->
+<!-- JS para toggle menu-->
+
+<script src="menu.js"></script>
+
+</body>
+</html>
